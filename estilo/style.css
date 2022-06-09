@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300&display=swap');
+
+:root{
+    --cor1:#ff8686;
+    --cor2:#ff2929;
+    --cor3:#bb2929;
+    --cor4:#782424;
+}
+
+body{
+    background: white url('../imagens/ac-milan.jpg') bottom/  cover no-repeat fixed;
+}
+header{
+    background-image: linear-gradient(to top, rgb(0, 0, 0),#ff2929 );
+}
+header > h1{
+    background-image: linear-gradient(to top, rgb(255, 0, 0),rgb(0, 0, 0),rgb(255, 255, 255));
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family:'Source Code Pro', monospace;
+    font-variant: small-caps;
+    font-size: 6vw;
+    text-align: center;
+    padding: 25px;
+}
+header > p{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Source Code Pro', monospace;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 25px;
+    font-size: 1.3em;
+    color: white;
+}
+main{
+    width: 70vw;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: auto;
+    line-height: 1.8em;
+}
+section h1, h2{
+    background-image: linear-gradient(to right,#ff868625,#ff292956);
+    border-radius: 4px;
+    padding: 3px;
+    margin: 10px;
+}
+strong{
+    color: var(--cor2);
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+ul{
+    list-style-position: inside;
+}
+pre{
+   white-space: pre-line;
+   font-size: 1.1em;
+}
+img{
+    width: 100%;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.194);
+}
+#extra{
+    background-color:#ff292948;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.073);
+}
+footer{
+    padding: 5px;
+}
+footer > p{
+    text-align: center;
+    color: white;
+}
+footer > p > a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+footer > p > a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+footer > p > a::after{
+    content: '\1F517';
+}
